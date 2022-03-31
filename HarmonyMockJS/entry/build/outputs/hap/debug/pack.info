@@ -1,0 +1,48 @@
+{
+    "summary": {
+        "app": {
+            "bundleName": "com.huawei.harmonymockjs",
+            "version": {
+                "code": 1000000,
+                "name": "1.0.0"
+            }
+        },
+        "modules": [
+            {
+                "mainAbility": "com.huawei.harmonymockjs.MainAbility",
+                "deviceType": [
+                    "phone",
+                    "tablet"
+                ],
+                "abilities": [
+                    {
+                        "name": "com.huawei.harmonymockjs.MainAbility",
+                        "label": "$string:entry_MainAbility"
+                    }
+                ],
+                "distro": {
+                    "moduleType": "entry",
+                    "installationFree": false,
+                    "deliveryWithInstall": true,
+                    "moduleName": "entry"
+                },
+                "apiVersion": {
+                    "compatible": 6,
+                    "releaseType": "Release",
+                    "target": 6
+                }
+            }
+        ]
+    },
+    "packages": [
+        {
+            "deviceType": [
+                "phone",
+                "tablet"
+            ],
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "name": "entry-debug-rich-unsigned"
+        }
+    ]
+}

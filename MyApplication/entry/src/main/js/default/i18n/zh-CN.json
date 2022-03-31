@@ -1,0 +1,13 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "male": "男",
+    "female": "女",
+    "secret": "保密",
+    "graduated": "本科",
+    "bachelor": "学士",
+    "master": "硕士",
+    "doctor": "博士"
+  }
+}

@@ -1,0 +1,85 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 6,
+            "releaseType": "Release",
+            "target": 6
+        },
+        "vendor": "huawei",
+        "bundleName": "com.huawei.harmonymockjs",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        "default": {
+            "debug": true
+        }
+    },
+    "module": {
+        "deviceType": [
+            "phone",
+            "tablet"
+        ],
+        "abilities": [
+            {
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "name": "com.huawei.harmonymockjs.MainAbility",
+                "icon": "$media:icon",
+                "description": "$string:mainability_description",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "launchType": "standard",
+                "homeAbility": true
+            }
+        ],
+        "mainAbility": "com.huawei.harmonymockjs.MainAbility",
+        "distro": {
+            "moduleType": "entry",
+            "installationFree": false,
+            "deliveryWithInstall": true,
+            "moduleName": "entry"
+        },
+        "package": "com.huawei.harmonymockjs",
+        "name": ".MyApplication",
+        "js": [
+            {
+                "pages": [
+                    "pages/index/index"
+                ],
+                "name": "default",
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": true
+                }
+            }
+        ],
+        "reqPermissions": [
+            {
+                "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+            },
+            {
+                "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
+            },
+            {
+                "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
+            },
+            {
+                "name": "ohos.permission.GRT_BUNDLE_INFO"
+            },
+            {
+                "name": "ohos.permission.INTERNET"
+            }
+        ]
+    }
+}

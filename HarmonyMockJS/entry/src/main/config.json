@@ -1,0 +1,75 @@
+{
+  "app": {
+    "bundleName": "com.huawei.harmonymockjs",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.harmonymockjs",
+    "name": ".MyApplication",
+    "mainAbility": "com.huawei.harmonymockjs.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.huawei.harmonymockjs.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
+      },
+      {
+        "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
+      },
+      {
+        "name": "ohos.permission.GRT_BUNDLE_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      }
+    ]
+  }
+}

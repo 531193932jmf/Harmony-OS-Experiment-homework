@@ -1,0 +1,51 @@
+<div class="container">
+    <video id="videoId" direction="horizontal" autoplay="true" style="display: {{videoshow}}; width: 100%;height: 35%;" src="/common/images/video.mp4"
+    muted="false" onstart="startCallback" ontimeupdate="timeupdateCallback">
+    </video>
+    <div>
+      <text>{{question}}</text>
+    </div>
+    <div style="width: 100%;">
+      <input type="radio" checked="{{trueRadioState}}" value="radio1" name="option"
+      onclick="radioChange(true)"></input>><text>True</text>
+      <input type="radio" checked="{{falseRadioState}}" value="radio2" name="option"
+            onclick="radioChange(false)"></input>><text>False</text>
+    </div>
+    <div>
+       <image style="background-color: black;width: 23px;height: 23px; position: fixed;top: 0px;right: 0px;"
+       src="/common/images/ic_tv.png" onclick="startRemoteFA">
+       </image>
+    </div>
+    <div style="width: 100%;flex-wrap: wrap;align-items: center;position: fixed;bottom: 15px;">
+      <div>
+        <button class="button" onclick="switchPreviousQuestion">上一题</button>
+        <button class="button" onclick="switchNextQuestion">下一题</button>
+      </div>
+      <div>
+        <button class="submit" onclick="showDialog">提交</button>
+      </div>
+    </div>
+    <dialog style="flex-direction: column;" id="dialogId" style='width: 80%;height: 100%;' oncancel="cancelDialog">
+        <div style="flex-direction: column;align-items: center;">
+            <div style="margin: 10px;">
+                <text style="width: 80%;font-weight: 600;font-size: 20px;text-align: center;">
+                    作答结果
+                </text>
+                <text style="color: blue;font-size: 20px;" onclick="closeDialog">关闭</text>
+            </div>
+            <divider style="color: gainsboro;"></divider>
+            <list style="margin-left: 50px;margin-right: 50px;">
+                <list-item style="margin-top: 30px;"><text style="font-size: 20px;">正确回答数:{{correctSum}}
+                </text></list-item>
+                <list-item style="margin-top: 30px;"><text style="font-size: 20px;">错误回答数:{{wrongSum}}
+                </text></list-item>
+                <list-item style="margin-top: 30px;"><text style="font-size: 20px;">未作答数:{{3-correctSum-wrongSum}}
+                </text></list-item>
+            </list>
+            <divider style="color: gainsboro;"></divider>
+            <div style="font-weight: 600;">
+                <text style="font-size: 20px;text-align: center;" onclick="reAnswer">重新作答</text>
+            </div>
+        </div>
+    </dialog>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    <input class="title" on:change="getInputInfo" value="{{ text }}" type="text"></input>
+    <div class="title">
+        <div class="radio-item">
+            <input id="radio_male" type="radio" name="radio" value="{{ $t('strings.male')}}"
+            onchange="getGender"></input>
+            <label target="radio_male">{{$t('strings.male')}}</label>
+        </div>
+        <div class="radio-item">
+            <input id="radio_female" type="radio" name="radio" value="{{ $t('strings.female')}}"
+                   onchange="getGender"></input>
+            <label target="radio_female">{{$t('strings.female')}}</label>
+        </div>
+        <div class="radio-item">
+            <input id="radio_secret" type="radio" name="radio" value="{{ $t('strings.secret')}}"
+                   onchange="getGender"></input>
+            <label target="radio_secret">{{$t('strings.secret')}}</label>
+        </div>
+    </div>
+    <select class="title" on:change="getSelectInfo">
+        <option value="{{$t('strings.graduated')}}">{{$t('strings.graduated')}}
+        </option>
+        <option value="{{$t('strings.bachelor')}}">{{$t('strings.bachelor')}}
+        </option>
+        <option value="{{$t('strings.master')}}">{{$t('strings.master')}}
+        </option>
+        <option value="{{$t('strings.doctor')}}">{{$t('strings.doctor')}}
+        </option>
+    </select>
+</div>

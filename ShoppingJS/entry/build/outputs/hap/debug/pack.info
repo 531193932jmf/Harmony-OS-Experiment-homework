@@ -1,0 +1,46 @@
+{
+    "summary": {
+        "app": {
+            "bundleName": "com.huawei.shopping",
+            "version": {
+                "code": 1000000,
+                "name": "1.0.0"
+            }
+        },
+        "modules": [
+            {
+                "mainAbility": "com.huawei.shopping.MainAbility",
+                "deviceType": [
+                    "phone"
+                ],
+                "abilities": [
+                    {
+                        "name": "com.huawei.shopping.MainAbility",
+                        "label": "$string:entry_MainAbility"
+                    }
+                ],
+                "distro": {
+                    "moduleType": "entry",
+                    "installationFree": false,
+                    "deliveryWithInstall": true,
+                    "moduleName": "entry"
+                },
+                "apiVersion": {
+                    "compatible": 5,
+                    "releaseType": "Release",
+                    "target": 5
+                }
+            }
+        ]
+    },
+    "packages": [
+        {
+            "deviceType": [
+                "phone"
+            ],
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "name": "entry-debug-rich-unsigned"
+        }
+    ]
+}

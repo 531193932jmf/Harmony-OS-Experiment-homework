@@ -1,0 +1,13 @@
+{
+  "strings": {
+    "hello": "Hello",
+    "world": "World",
+    "male": "male",
+    "female": "female",
+    "secret": "secret",
+    "graduated": "graduated",
+    "bachelor": "bachelor",
+    "master": "master",
+    "doctor": "doctor"
+  }
+}

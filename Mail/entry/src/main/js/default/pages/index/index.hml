@@ -1,0 +1,25 @@
+<div class="container">
+    <div>
+        <button type="circle" style="margin: 10px;font-size: 20px; background-color: white;text-color: deepskyblue;font-weight: bold;"
+on:click="tryContinueAbility">迁移</button>
+        <text style="font-size: 40px; width:80%; text-align: center;">写邮件</text>
+        <button type="circle" style="margin: 10px;font-size: 20px; background-color: white;text-color: deepskyblue;font-weight: bold;"
+>发送</button>
+    </div>
+    <div>
+        <text style="margin: 10px;font-size: 20px;width: 100px;">收件人</text>
+        <input style="width: 80%;background-color: white;" type="email"></input>
+    </div>
+    <divider style="color: gray; stroke-width: 2px;"></divider>
+    <div>
+        <text style="margin: 10px;font-size: 20px;width: 100px;">抄送</text>
+        <input style="width: 80%;background-color: white;" type="email"></input>
+    </div>
+    <divider style="color: gray; stroke-width: 2px;"></divider>
+    <div>
+        <text style="margin: 10px;font-size: 20px;width: 100px;">主题</text>
+        <input style="width: 80%;background-color: white;" type="email"></input>
+    </div>
+    <textarea placeholder="邮件正文"style="margin: 10px;height: 70%;" onchange="textareaChange">{{textareadata}}</textarea>
+
+</div>

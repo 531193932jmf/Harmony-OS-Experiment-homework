@@ -1,0 +1,69 @@
+{
+    "app": {
+        "bundleName": "com.huawei.shopping",
+        "vendor": "huawei",
+        "apiVersion": {
+            "compatible": 5,
+            "target": 5,
+            "releaseType": "Release"
+        },
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        "default": {
+            "debug": true
+        }
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": false
+        },
+        "abilities": [
+            {
+                "name": "com.huawei.shopping.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "launchType": "standard",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "homeAbility": true
+            }
+        ],
+        "js": [
+            {
+                "name": "default",
+                "pages": [
+                    "pages/homepage/homepage",
+                    "pages/shoppingDetailsPage/shoppingDetailsPage",
+                    "pages/viewsChart/viewsChart"
+                ],
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": false
+                }
+            }
+        ],
+        "mainAbility": "com.huawei.shopping.MainAbility",
+        "package": "com.huawei.shopping"
+    }
+}
